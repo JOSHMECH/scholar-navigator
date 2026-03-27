@@ -106,7 +106,7 @@ const Landing = () => {
       {/* Footer */}
       <footer className="border-t border-border bg-muted/50 py-8">
         <div className="container text-center text-sm text-muted-foreground">
-          <p>© 2026 ScholarLens. Built with ❤️ by JOSH.</p>
+          <p>© 2026 ScholarLens. Built by JOSH.</p>
         </div>
       </footer>
     </div>
