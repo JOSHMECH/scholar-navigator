@@ -14,7 +14,66 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      predictions: {
+        Row: {
+          created_at: string
+          id: string
+          predicted_cgpa: number
+          recommendations: Json
+          risk_level: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          predicted_cgpa: number
+          recommendations?: Json
+          risk_level: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          predicted_cgpa?: number
+          recommendations?: Json
+          risk_level?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      student_inputs: {
+        Row: {
+          attendance: number
+          carry_overs: number
+          created_at: string
+          current_cgpa: number
+          id: string
+          study_hours: number
+          target_cgpa: number
+          user_id: string
+        }
+        Insert: {
+          attendance: number
+          carry_overs?: number
+          created_at?: string
+          current_cgpa: number
+          id?: string
+          study_hours: number
+          target_cgpa: number
+          user_id: string
+        }
+        Update: {
+          attendance?: number
+          carry_overs?: number
+          created_at?: string
+          current_cgpa?: number
+          id?: string
+          study_hours?: number
+          target_cgpa?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
